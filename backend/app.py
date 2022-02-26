@@ -10,10 +10,7 @@ cors = CORS(
         allow_headers=["Cookie", "content-type"],
     )
 
-db_url = "localhost:5432"
-db_name = "fact"
-db_user = "postgres"
-db_password = "orbe"
+
 app.config[
     "SQLALCHEMY_DATABASE_URI"
 ] = f"postgresql://{db_user}:{db_password}@{db_url}/{db_name}"
